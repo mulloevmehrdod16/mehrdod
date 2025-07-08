@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #eaeaf0;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      background: #0f172a;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .sidebar {
+      width: 250px;
+      background: #1e293b;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar h3 {
+      margin-bottom: 20px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      color: #cbd5e1;
+      cursor: pointer;
+    }
+    .contact-item img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .main {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    .main h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .contact-type {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .contact-type button {
+      flex: 1;
+      padding: 10px;
+      margin-right: 10px;
+      border: none;
+      background: #334155;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .contact-type button.active {
+      background: #3b82f6;
+    }
+    .profile-section label {
+      display: block;
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+    .profile-section input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 5px;
+      background: #1e293b;
+      color: #fff;
+    }
+    .rightbar {
+      width: 300px;
+      background: #1e293b;
+      padding: 20px;
+      border-left: 1px solid #334155;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .file-section, .notes-section {
+      margin-bottom: 20px;
+    }
+    .file-item {
+      display: flex;
+      align-items: center;
+      background: #0f172a;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .file-item span {
+      margin-left: 10px;
+    }
+    .note-item {
+      background: #0f172a;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .note-item small {
+      display: block;
+      margin-top: 5px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Contacts</h3>
+      <div class="contact-item"><img src="https://i.pravatar.cc/32?u=1"> Ham Chuwon</div>
+      <div class="contact-item"><img src="https://i.pravatar.cc/32?u=2"> Harinder Bharwal</div>
+      <div class="contact-item"><img src="https://i.pravatar.cc/32?u=3"> Quincy Hensen</div>
+      <div class="contact-item"><img src="https://i.pravatar.cc/32?u=4"> Gabriela Soares</div>
+      <div class="contact-item"><img src="https://i.pravatar.cc/32?u=5"> Mark Hog</div>
+      <div class="contact-item"><img src="https://i.pravatar.cc/32?u=6"> Elizabeth Strong</div>
+    </div>
+    <div class="main">
+      <h1>#2447 Quincy Hensen</h1>
+      <div class="contact-type">
+        <button>Customer</button>
+        <button class="active">Consignee</button>
+        <button>Payee</button>
+      </div>
+      <div class="profile-section">
+        <label>First Name</label>
+        <input type="text" value="Quincy">
+        <label>Last Name</label>
+        <input type="text" value="Hensen">
+        <label>Email Address</label>
+        <input type="email" value="quincy@gmail.com">
+        <label>Phone Number</label>
+        <input type="tel" value="(888) 777-6787">
+      </div>
+    </div>
+    <div class="rightbar">
+      <div class="file-section">
+        <h4>Files</h4>
+        <div class="file-item">📄 <span>Certificate of Insurance</span></div>
+        <div class="file-item">📄 <span>Billing Agreement</span></div>
+      </div>
+      <div class="notes-section">
+        <h4>Notes</h4>
+        <div class="note-item">
+          Quincy should be the one receiving the shipment...
+          <small>Andy Carpenter • 2 hours ago</small>
+        </div>
+        <div class="note-item">
+          Remember to ask Quincy to send driveway photos.
+          <small>Anna Fali • 3 days ago</small>
+        </div>
+        <div class="note-item">
+          He should be signing the agreement soon.
+          <small>Andy Carpenter • 4 days ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
